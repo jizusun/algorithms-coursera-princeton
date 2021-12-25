@@ -40,10 +40,10 @@ task hello(type: Zip) {
     destinationDirectory = (file('out'))
 }
 
-task runWithJavaExec(type: JavaExec) {
+task randomWord(type: JavaExec) {
     group = "Execution"
     description = "Run the main class with JavaExecTask"
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'RandomWord'
-    args 'aaa bbb ccc'
+    standardInput = new FileInputStream('src/test/java/random.txt')
 }
