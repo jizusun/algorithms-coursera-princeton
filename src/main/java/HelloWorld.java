@@ -5,7 +5,7 @@ public class HelloWorld {
         System.out.println(getHelloWorld());
     }
 
-    static String getHelloWorld() {
+    protected static String getHelloWorld() {
         return "Hello, World";
     }
 }

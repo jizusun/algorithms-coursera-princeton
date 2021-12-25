@@ -17,7 +17,6 @@ dependencies {
     implementation 'com.github.kevin-wayne:algs4:master-SNAPSHOT'
 }
 
-
 test {
     testLogging {
         events "passed", "skipped", "failed"
@@ -32,4 +31,19 @@ jacocoTestReport {
         xml.required = true
 //        html.required = false
     }
+}
+
+task hello(type: Zip) {
+    from 'src/main/hello/'
+    include '*'
+    archiveFileName = 'hello.zip'
+    destinationDirectory = (file('out'))
+}
+
+task runWithJavaExec(type: JavaExec) {
+    group = "Execution"
+    description = "Run the main class with JavaExecTask"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'RandomWord'
+    args 'aaa bbb ccc'
 }
