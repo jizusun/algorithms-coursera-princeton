@@ -1,20 +1,29 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RandomWordTest {
 
+    RandomWord r;
+
+    @BeforeEach
+    void setUp() {
+        String[] names = {"Kevin", "Bob"};
+        r = new RandomWord();
+    }
+
     @Test
     void getSurvivingChampionAlways() {
         int i = 0;
-        String actual = RandomWord.getSurvivingChampion("", "tails", ++i);
+        String actual = r.getSurvivingChampion("", "tails", ++i);
         String expected = "tails";
         assertEquals(expected, actual);
     }
     @Test
     void getSurvivingChampionHalf() {
         int i = 1;
-        String actual = RandomWord.getSurvivingChampion("prev", "tails", ++i);
+        String actual = r.getSurvivingChampion("prev", "tails", ++i);
         assertNotEquals("", actual);
     }
     @Test

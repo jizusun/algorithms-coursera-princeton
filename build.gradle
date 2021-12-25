@@ -14,9 +14,7 @@ repositories {
 dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
-//    implementation files('libs/algs4.jar')
     implementation 'com.github.kevin-wayne:algs4:master-SNAPSHOT'
-//    compile project(':algs4')
 }
 
 
@@ -32,6 +30,6 @@ jacocoTestReport {
     dependsOn test // tests are required to run before generating the report
     reports {
         xml.required = true
-        html.required = false
+//        html.required = false
     }
 }
