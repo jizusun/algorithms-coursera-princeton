@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HelloWorldTest {
     @Test
-    public void GetCorrectText() {
+    public void getHelloWorld() {
         Assertions.assertEquals("Hello, World", HelloWorld.getHelloWorld());
     }
 

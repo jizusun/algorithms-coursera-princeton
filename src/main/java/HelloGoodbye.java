@@ -7,18 +7,18 @@ public class HelloGoodbye {
         secondName = twoNames[1];
    }
 
-    public String sayHello() {
+    public String getHello() {
        return String.format("Hello %s and %s.", firstName, secondName);
     }
 
-    public String sayGoodbye() {
+    public String getGoodbye() {
         return String.format("Goodbye %s and %s.", secondName, firstName);
     }
 
     public static void main(String[] args) {
        HelloGoodbye hg = new HelloGoodbye(args);
-       System.out.println(hg.sayHello());
-       System.out.println(hg.sayGoodbye());
+       System.out.println(hg.getHello());
+       System.out.println(hg.getGoodbye());
     }
 
 

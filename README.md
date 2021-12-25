@@ -4,17 +4,12 @@
 [![codecov](https://codecov.io/gh/jizusun/algorithms-stanford-coursera/branch/main/graph/badge.svg?token=XUemY9nOoC)](https://codecov.io/gh/jizusun/algorithms-stanford-coursera)
 
 
-
-```shell
-git submodule update --init --recursive
-```
-
-
 ## Algorithms, Part 1
 
 - [Cousera](https://www.coursera.org/learn/algorithms-part1/)
 - [booksite](https://algs4.cs.princeton.edu/home/)
 - https://github.com/kevin-wayne/algs4/issues/102
+- https://algs4.cs.princeton.edu/code/
 
 
 

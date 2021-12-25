@@ -13,16 +13,16 @@ class HelloGoodbyeTest {
     }
 
     @Test
-    void sayHello() {
+    void getHello() {
         String expected = "Hello Kevin and Bob.";
-        String actual = hg.sayHello();
+        String actual = hg.getHello();
         assertEquals(expected, actual);
     }
 
     @Test
-    void sayGoodbye() {
+    void getGoodbye() {
         String expected = "Goodbye Bob and Kevin.";
-        String actual = hg.sayGoodbye();
+        String actual = hg.getGoodbye();
         assertEquals(expected, actual);
     }
 }
