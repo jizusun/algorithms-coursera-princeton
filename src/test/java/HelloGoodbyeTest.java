@@ -9,7 +9,8 @@ class HelloGoodbyeTest {
     @BeforeEach
     void setUp() {
         String[] names = {"Kevin", "Bob"};
-        hg = new HelloGoodbye(names);
+        hg = new HelloGoodbye();
+        hg.addNames(names);
     }
 
     @Test

@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomWord {
-    public static String getSurvivingChampion(String previousChampion, String newWord, int i) {
+    static String getSurvivingChampion(String previousChampion, String newWord, int i) {
         double p = i == 0 ? 0 : 1.0/i;
         boolean selected = StdRandom.bernoulli(p);
         return selected ? newWord : previousChampion;
