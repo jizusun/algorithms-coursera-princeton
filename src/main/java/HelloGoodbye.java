@@ -17,8 +17,8 @@ public class HelloGoodbye {
 
     public static void main(String[] args) {
        HelloGoodbye hg = new HelloGoodbye(args);
-       hg.sayHello();
-       hg.sayGoodbye();
+       System.out.println(hg.sayHello());
+       System.out.println(hg.sayGoodbye());
     }
 
 
