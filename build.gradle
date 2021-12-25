@@ -8,12 +8,17 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+//    implementation files('libs/algs4.jar')
+    implementation 'com.github.kevin-wayne:algs4:master-SNAPSHOT'
+//    compile project(':algs4')
 }
+
 
 test {
     testLogging {
