@@ -1,11 +1,15 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id 'application'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+application {
+    mainClass = 'HelloWorld'
+}
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
@@ -45,5 +49,5 @@ task randomWord(type: JavaExec) {
     description = "Run the main class with JavaExecTask"
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'RandomWord'
-    standardInput = new FileInputStream('src/test/java/random.txt')
+    standardInput = new FileInputStream('week1HelloTdd/src/test/java/random.txt')
 }
