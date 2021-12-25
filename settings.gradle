@@ -1,2 +1,3 @@
-rootProject.name = 'basic-multiproject'
-include 'week1HelloTdd'
+rootProject.name = 'algorithms-coursera-assignments'
+include 'week1-hello-tdd'
+include 'week1-hello'

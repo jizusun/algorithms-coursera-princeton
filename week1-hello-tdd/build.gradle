@@ -49,5 +49,5 @@ task randomWord(type: JavaExec) {
     description = "Run the main class with JavaExecTask"
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'RandomWord'
-    standardInput = new FileInputStream('week1HelloTdd/src/test/java/random.txt')
+    standardInput = new FileInputStream("${project.projectDir}/src/test/java/random.txt")
 }
